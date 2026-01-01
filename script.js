@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
     loadStructuredContent();
     animateCounters();
     setupEventListeners();
+    initializeAdmin();
     
     // Setup admin button listener directly here to ensure it works
     const adminBtn = document.getElementById('adminBtn');
@@ -33,8 +34,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // Check if already logged in
             if (isAdminLoggedIn) {
-                // Navigate to admin page if authenticated
-                window.location.href = 'https://boutoubfaycal-art.github.io/laboratoire-socio-acteurs-sociaux/admin/';
+                // Navigate to admin page if authenticated - auto-detect URL
+                const baseUrl = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' 
+                    ? '/admin/' 
+                    : '/laboratoire-socio-acteurs-sociaux/admin/';
+                window.location.href = baseUrl;
             } else {
                 // Show login modal if not authenticated
                 openAdminLogin();
@@ -1207,7 +1211,11 @@ function handleAdminLogin(e) {
 
         // Redirect to admin page after successful login
         setTimeout(() => {
-            window.location.href = 'https://boutoubfaycal-art.github.io/laboratoire-socio-acteurs-sociaux/admin/';
+            // Auto-detect URL based on environment (local vs production)
+            const baseUrl = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' 
+                ? '/admin/' 
+                : '/laboratoire-socio-acteurs-sociaux/admin/';
+            window.location.href = baseUrl;
         }, 1000);
     } else {
         showNotification(currentLang === 'ar'
