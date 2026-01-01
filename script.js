@@ -3,7 +3,7 @@ console.log('JavaScript file loaded successfully!');
 
 // Global variables
 let currentLang = 'ar';
-let isAdminLoggedIn = true; // Toujours connecté pour les tests
+let isAdminLoggedIn = false; // Authentification requise pour l'administration
 let adminUsername = 'MOURAD';
 let adminPassword = '080213400'; // Mot de passe par défaut
 let membersData = [];
@@ -31,8 +31,14 @@ document.addEventListener('DOMContentLoaded', function() {
             console.log('Admin button clicked!');
             e.preventDefault();
 
-            // Navigate to admin page instead of opening modal
-            window.location.href = 'https://boutoubfaycal-art.github.io/laboratoire-socio-acteurs-sociaux/admin/';
+            // Check if already logged in
+            if (isAdminLoggedIn) {
+                // Navigate to admin page if authenticated
+                window.location.href = 'https://boutoubfaycal-art.github.io/laboratoire-socio-acteurs-sociaux/admin/';
+            } else {
+                // Show login modal if not authenticated
+                openAdminLogin();
+            }
         });
     }
 });
@@ -1047,17 +1053,12 @@ revealOnScroll(); // Initial check
 
 // Initialize admin functionality
 function initializeAdmin() {
-    // TEMPORAIRE : Pour les tests, montrer toujours le bouton admin
-    // À supprimer en production pour des raisons de sécurité
-    isAdminLoggedIn = true;
-    showAdminButton();
-
-    // Code original commenté :
-    // const adminStatus = localStorage.getItem('adminLoggedIn');
-    // if (adminStatus === 'true') {
-    //     isAdminLoggedIn = true;
-    //     showAdminButton();
-    // }
+    // Vérifier l'état d'authentification réel
+    const adminStatus = localStorage.getItem('adminLoggedIn');
+    if (adminStatus === 'true') {
+        isAdminLoggedIn = true;
+        showAdminButton();
+    }
 
     // Setup other admin event listeners (forms, modals, etc.)
     setupAdminEventListeners();
