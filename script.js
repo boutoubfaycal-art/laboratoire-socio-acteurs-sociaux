@@ -1190,12 +1190,14 @@ function setupAdminEventListeners() {
 function handleAdminLogin(e) {
     e.preventDefault();
 
+    const username = document.getElementById('adminUsername').value;
     const password = document.getElementById('adminPassword').value;
 
-    if (password === adminPassword) {
+    if (username === adminUsername && password === adminPassword) {
         isAdminLoggedIn = true;
         localStorage.setItem('adminLoggedIn', 'true');
 
+        // Hide login modal
         document.getElementById('adminLoginModal').classList.add('hidden');
         showAdminButton();
 
@@ -1203,20 +1205,30 @@ function handleAdminLogin(e) {
             ? 'تم تسجيل الدخول بنجاح!'
             : 'Connexion réussie!');
 
-        // Open dashboard immediately after login
+        // Redirect to admin page after successful login
         setTimeout(() => {
-            openAdminDashboard();
-        }, 500);
+            window.location.href = 'https://boutoubfaycal-art.github.io/laboratoire-socio-acteurs-sociaux/admin/';
+        }, 1000);
     } else {
         showNotification(currentLang === 'ar'
-            ? 'كلمة المرور غير صحيحة!'
-            : 'Mot de passe incorrect!', 'error');
+            ? 'اسم المستخدم أو كلمة المرور غير صحيحة!'
+            : 'Nom d\'utilisateur ou mot de passe incorrect!', 'error');
     }
 }
 
 // Open admin login modal
 function openAdminLogin() {
-    document.getElementById('adminLoginModal').classList.remove('hidden');
+    const modal = document.getElementById('adminLoginModal');
+    if (modal) {
+        modal.classList.remove('hidden');
+        // Focus on password input
+        const passwordInput = document.getElementById('adminPassword');
+        if (passwordInput) {
+            passwordInput.focus();
+        }
+    } else {
+        console.error('Admin login modal not found!');
+    }
 }
 
 // Open admin dashboard
