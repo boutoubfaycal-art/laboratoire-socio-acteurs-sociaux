@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
         backButton.style.cursor = 'pointer';
         backButton.addEventListener('click', function() {
             // Redirection vers la page principale avec l'URL complète de GitHub Pages
-            window.location.href = 'https://boutoubfaycal-art.github.io/laboratoire-socio-acteurs-sociaux/';
+            window.location.href = 'https://boutoubfaycal-art.github.io/laboratoire-socio-acteurs-sociaux/admin/';
         });
     }
 
