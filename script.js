@@ -36,8 +36,8 @@ document.addEventListener('DOMContentLoaded', function() {
             if (isAdminLoggedIn) {
                 // Navigate to admin page if authenticated - auto-detect URL
                 const baseUrl = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' 
-                    ? '/admin/' 
-                    : '/laboratoire-socio-acteurs-sociaux/admin/';
+                    ? 'https://boutoubfaycal-art.github.io/laboratoire-socio-acteurs-sociaux/admin/' 
+                    : 'https://boutoubfaycal-art.github.io/laboratoire-socio-acteurs-sociaux/admin/';
                 window.location.href = baseUrl;
             } else {
                 // Show login modal if not authenticated
@@ -1193,11 +1193,22 @@ function setupAdminEventListeners() {
 // Handle admin login
 function handleAdminLogin(e) {
     e.preventDefault();
-
+    
+    console.log('=== ADMIN LOGIN DEBUG ===');
+    console.log('Form submitted!');
+    
     const username = document.getElementById('adminUsername').value;
     const password = document.getElementById('adminPassword').value;
+    
+    console.log('Username input:', username);
+    console.log('Password input:', password);
+    console.log('Expected username:', adminUsername);
+    console.log('Expected password:', adminPassword);
+    console.log('Username match:', username === adminUsername);
+    console.log('Password match:', password === adminPassword);
 
     if (username === adminUsername && password === adminPassword) {
+        console.log('✅ LOGIN SUCCESSFUL!');
         isAdminLoggedIn = true;
         localStorage.setItem('adminLoggedIn', 'true');
 
@@ -1209,15 +1220,13 @@ function handleAdminLogin(e) {
             ? 'تم تسجيل الدخول بنجاح!'
             : 'Connexion réussie!');
 
-        // Redirect to admin page after successful login
+        // Open admin dashboard in modal instead of redirecting
         setTimeout(() => {
-            // Auto-detect URL based on environment (local vs production)
-            const baseUrl = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' 
-                ? '/admin/' 
-                : '/laboratoire-socio-acteurs-sociaux/admin/';
-            window.location.href = baseUrl;
-        }, 1000);
+            console.log('Opening admin dashboard modal...');
+            openAdminDashboard();
+        }, 500);
     } else {
+        console.log('❌ LOGIN FAILED!');
         showNotification(currentLang === 'ar'
             ? 'اسم المستخدم أو كلمة المرور غير صحيحة!'
             : 'Nom d\'utilisateur ou mot de passe incorrect!', 'error');
