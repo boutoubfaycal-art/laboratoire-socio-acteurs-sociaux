@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
             e.preventDefault();
 
             // Navigate to admin page instead of opening modal
-            window.location.href = '/admin';
+            window.location.href = 'https://boutoubfaycal-art.github.io/laboratoire-socio-acteurs-sociaux/admin/';
         });
     }
 });
