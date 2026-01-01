@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مخبر الدراسات السوسيولوجية للفاعلين الاجتماعيين</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-blue-800 to-blue-600 text-white shadow-lg">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-reverse space-x-4">
+                    <i class="fas fa-university text-3xl"></i>
+                    <div>
+                        <h1 class="text-2xl font-bold">مخبر الدراسات السوسيولوجية للفاعلين الاجتماعيين</h1>
+                        <p class="text-sm opacity-90">Laboratoire d'Études Sociologiques des Acteurs Sociaux</p>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-reverse space-x-4">
+                    <button id="adminBtn" class="bg-yellow-500 hover:bg-yellow-600 text-black px-4 py-2 rounded-lg transition" title="لوحة التحكم">
+                        <i class="fas fa-cog ml-2"></i>
+                        <span>الإدارة</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="modern-nav sticky top-0 z-40">
+        <div class="container mx-auto px-4">
+            <ul class="flex flex-wrap justify-center space-x-reverse space-x-6 py-4">
+                <li><a href="#accueil" class="nav-link text-blue-800 hover:text-blue-600 font-medium transition" data-ar="الرئيسية" data-fr="Accueil">الرئيسية</a></li>
+                <li><a href="#nomination" class="nav-link text-gray-700 hover:text-blue-600 font-medium transition" data-ar="تسمية المخبر" data-fr="Nomination">تسمية المخبر</a></li>
+                <li><a href="#presentation-laboratoire" class="nav-link text-gray-700 hover:text-blue-600 font-medium transition" data-ar="تقديم المخبر" data-fr="Présentation">تقديم المخبر</a></li>
+                <li><a href="#definition-laboratoire" class="nav-link text-gray-700 hover:text-blue-600 font-medium transition" data-ar="تعريف المخبر" data-fr="Définition">تعريف المخبر</a></li>
+                <li><a href="equipes.html" class="nav-link text-gray-700 hover:text-blue-600 font-medium transition" data-ar="فرق البحث" data-fr="Équipes">فرق البحث</a></li>
+                <li><a href="#recherche" class="nav-link text-gray-700 hover:text-blue-600 font-medium transition" data-ar="البحث" data-fr="Recherche">البحث</a></li>
+                <li><a href="#publications" class="nav-link text-gray-700 hover:text-blue-600 font-medium transition" data-ar="المنشورات" data-fr="Publications">المنشورات</a></li>
+                <li><a href="#activites" class="nav-link text-gray-700 hover:text-blue-600 font-medium transition" data-ar="نشاطات المخبر" data-fr="Activités du laboratoire">نشاطات المخبر</a></li>
+                <li><a href="#contact" class="nav-link text-gray-700 hover:text-blue-600 font-medium transition" data-ar="اتصل بنا" data-fr="Contact">اتصل بنا</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <!-- Hero Section -->
+        <section id="accueil" class="mb-12">
+            <div class="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-8 shadow-lg">
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h2 class="text-3xl font-bold text-blue-800 mb-4" data-ar="مرحبا بكم في مخبرنا" data-fr="Bienvenue dans notre laboratoire">مرحبا بكم في مخبرنا</h2>
+                        <p class="text-gray-700 mb-6 leading-relaxed" data-ar="مخبر الدراسات السوسيولوجية للفاعلين الاجتماعيين يكرس عمله للبحث العلمي في مجال علم الاجتماع، مع التركيز على دراسة الفاعلين الاجتماعيين وتحليل الظواهر الاجتماعية المعاصرة." data-fr="Le Laboratoire d'Études Sociologiques des Acteurs Sociaux est dédié à la recherche scientifique dans le domaine de la sociologie, en se concentrant sur l'étude des acteurs sociaux et l'analyse des phénomènes sociaux contemporains.">
+                            مخبر الدراسات السوسيولوجية للفاعلين الاجتماعيين يكرس عمله للبحث العلمي في مجال علم الاجتماع، مع التركيز على دراسة الفاعلين الاجتماعيين وتحليل الظواهر الاجتماعية المعاصرة.
+                        </p>
+                        <div class="flex flex-wrap gap-4">
+                            <button class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">
+                                <i class="fas fa-book-open ml-2"></i>
+                                <span data-ar="استكشف أبحاثنا" data-fr="Explorez nos recherches">استكشف أبحاثنا</span>
+                            </button>
+                            <button class="border-2 border-blue-600 text-blue-600 px-6 py-3 rounded-lg hover:bg-blue-50 transition">
+                                <i class="fas fa-users ml-2"></i>
+                                <span data-ar="فريق العمل" data-fr="Notre équipe">فريق العمل</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <svg width="500" height="300" xmlns="http://www.w3.org/2000/svg" class="rounded-lg shadow-xl w-full">
+                            <rect width="100%" height="100%" fill="#2563eb"/>
+                            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="24" font-weight="bold">مخبر الدراسات السوسيولوجية</text>
+                            <text x="50%" y="65%" dominant-baseline="middle" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14" opacity="0.8">Laboratoire d'Études Sociologiques des Acteurs Sociaux</text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Statistics Section -->
+        <section class="mb-12">
+            <div class="grid md:grid-cols-4 gap-6">
+                <div class="stat-card-modern observe-fade-in delay-1">
+                    <div class="text-center">
+                        <i class="fas fa-users text-3xl text-blue-600 mb-3 icon-interactive"></i>
+                        <h3 class="text-2xl font-bold text-gray-800 modern-heading" id="totalMembers">25</h3>
+                        <p class="text-gray-600" data-ar="إجمالي الأعضاء" data-fr="Total membres">إجمالي الأعضاء</p>
+                    </div>
+                </div>
+                <div class="stat-card-modern observe-fade-in delay-2">
+                    <div class="text-center">
+                        <i class="fas fa-user-graduate text-3xl text-green-600 mb-3 icon-interactive"></i>
+                        <h3 class="text-2xl font-bold text-gray-800 modern-heading" id="researchers">15</h3>
+                        <p class="text-gray-600" data-ar="باحثون" data-fr="Chercheurs">باحثون</p>
+                    </div>
+                </div>
+                <div class="stat-card-modern observe-fade-in delay-3">
+                    <div class="text-center">
+                        <i class="fas fa-book text-3xl text-purple-600 mb-3 icon-interactive"></i>
+                        <h3 class="text-2xl font-bold text-gray-800 modern-heading" id="publications">42</h3>
+                        <p class="text-gray-600" data-ar="منشورات علمية" data-fr="Publications">منشورات علمية</p>
+                    </div>
+                </div>
+                <div class="stat-card-modern observe-fade-in delay-4">
+                    <div class="text-center">
+                        <i class="fas fa-project-diagram text-3xl text-orange-600 mb-3 icon-interactive"></i>
+                        <h3 class="text-2xl font-bold text-gray-800 modern-heading" id="projects">8</h3>
+                        <p class="text-gray-600" data-ar="مشاريع بحثية" data-fr="Projets">مشاريع بحثية</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Search and Filter Section -->
+        <section class="mb-12">
+            <div class="bg-white rounded-xl shadow-lg p-8">
+                <div class="flex flex-col md:flex-row gap-4 items-center justify-between mb-6">
+                    <h2 class="text-2xl font-bold text-blue-800" data-ar="البحث والتصفية" data-fr="Recherche et filtrage">البحث والتصفية</h2>
+                    <div class="flex gap-4">
+                        <div class="relative">
+                            <input type="text" id="searchInput" placeholder="البحث في الأعضاء..." class="w-64 px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" data-ar="البحث في الأعضاء..." data-fr="Rechercher des membres...">
+                            <i class="fas fa-search absolute right-3 top-3 text-gray-400"></i>
+                        </div>
+                        <button id="exportBtn" class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition">
+                            <i class="fas fa-download ml-2"></i>
+                            <span data-ar="تصدير" data-fr="Exporter">تصدير</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Filter Buttons -->
+                <div class="flex flex-wrap gap-3 justify-center">
+                    <button class="filter-btn active bg-blue-600 text-white px-6 py-2 rounded-lg transition" data-category="all">
+                        <i class="fas fa-users ml-2"></i>
+                        <span data-ar="الكل" data-fr="Tous">الكل</span>
+                    </button>
+                    <button class="filter-btn bg-gray-200 text-gray-700 px-6 py-2 rounded-lg hover:bg-gray-300 transition" data-category="professeurs">
+                        <i class="fas fa-chalkboard-teacher ml-2"></i>
+                        <span data-ar="أساتذة" data-fr="Professeurs">أساتذة</span>
+                    </button>
+                    <button class="filter-btn bg-gray-200 text-gray-700 px-6 py-2 rounded-lg hover:bg-gray-300 transition" data-category="chercheurs">
+                        <i class="fas fa-microscope ml-2"></i>
+                        <span data-ar="باحثون" data-fr="Chercheurs">باحثون</span>
+                    </button>
+                    <button class="filter-btn bg-gray-200 text-gray-700 px-6 py-2 rounded-lg hover:bg-gray-300 transition" data-category="doctorants">
+                        <i class="fas fa-graduation-cap ml-2"></i>
+                        <span data-ar="طلاب دكتوراه" data-fr="Doctorants">طلاب دكتوراه</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Members Section -->
+        
+
+        <!-- Section 1: Nomination du laboratoire -->
+        
+        
+        <!-- Section 2: Présentation du laboratoire -->
+        <section id="presentation-laboratoire" class="mb-12">
+            <div class="bg-white rounded-xl shadow-lg p-8">
+                <h2 class="text-3xl font-bold text-blue-800 mb-6 text-center" data-ar="تقديم المخبر" data-fr="Présentation du laboratoire">تقديم المخبر</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-gradient-to-r from-blue-50 to-indigo-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4" data-ar="منسق مشروع إنشاء المخبر" data-fr="Coordinateur du projet de création du laboratoire">منسق مشروع إنشاء المخبر</h3>
+                        <p class="text-gray-700 leading-relaxed" data-ar="تم تعيين منسق لإنشاء وتطوير المخبر لضمان الإدارة الفعالة للأبحاث والفعاليات." data-fr="Un coordinateur a été nommé pour la création et le développement du laboratoire afin d'assurer une gestion efficace des recherches et des activités.">
+                            تم تعيين منسق لإنشاء وتطوير المخبر لضمان الإدارة الفعالة للأبحاث والفعاليات.
+                        </p>
+                    </div>
+                    <div class="bg-gradient-to-r from-green-50 to-emerald-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4" data-ar="أهداف المخبر" data-fr="Objectifs du laboratoire">أهداف المخبر</h3>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 ml-2 mt-1"></i>
+                                <span data-ar="تطوير البحث العلمي في مجال علم الاجتماع" data-fr="Développer la recherche scientifique en sociologie">تطوير البحث العلمي في مجال علم الاجتماع</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 ml-2 mt-1"></i>
+                                <span data-ar="تكوين الباحثين وتأهيلهم" data-fr="Former et qualifier les chercheurs">تكوين الباحثين وتأهيلهم</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 ml-2 mt-1"></i>
+                                <span data-ar="نشر النتائج العلمية" data-fr="Diffuser les résultats scientifiques">نشر النتائج العلمية</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Définition du laboratoire -->
+        <section id="definition-laboratoire" class="mb-12">
+            <div class="bg-white rounded-xl shadow-lg p-8">
+                <h2 class="text-3xl font-bold text-blue-800 mb-6 text-center" data-ar="تعريف المخبر" data-fr="Définition du laboratoire">تعريف المخبر</h2>
+                
+                <!-- Description du laboratoire -->
+                <div class="bg-gradient-to-r from-purple-50 to-pink-50 p-8 rounded-lg mb-8">
+                    <h3 class="text-xl font-semibold text-purple-800 mb-4" data-ar="وصف مختصر للمخبر" data-fr="Description brève du laboratoire">وصف مختصر للمخبر</h3>
+                    <p class="text-gray-700 leading-relaxed mb-6" data-ar="يعد مخبر الدراسات السوسيولوجية للفاعلين الاجتماعية في الجزائر مدخلاً أساسياً للاقتراب من واقع التحولات الاجتماعية والاقتصادية والسياسية والثقافية في المجتمع الجزائري، وهذا عن طريق دراسة الفاعلين الاجتماعيين باعتبارهم حلقة أساسية في التغير. وعليه، اشتمل هذا المخبر على أربع فرق بحث تختص في دراسة هؤلاء الفاعلين الاجتماعيين، من شباب، وعمال، وفئات اجتماعية أخرى في الوسط الحضري والريفي، وكذا دراسة أهم القيم والممارسات الثقافية والدينية في هذا الوسط." data-fr="Le Laboratoire d'Études Sociologiques des Acteurs Sociaux en Algérie constitue une approche fondamentale pour appréhender la réalité des transformations sociales, économiques, politiques et culturelles dans la société algérienne, à travers l'étude des acteurs sociaux considérés comme un maillon essentiel du changement. Ainsi, ce laboratoire comprend quatre équipes de recherche spécialisées dans l'étude de ces acteurs sociaux: jeunes, travailleurs et autres catégories sociales en milieu urbain et rural, ainsi que l'étude des valeurs et pratiques culturelles et religieuses dans cet environnement.">
+                        يعد مخبر الدراسات السوسيولوجية للفاعلين الاجتماعية في الجزائر مدخلاً أساسياً للاقتراب من واقع التحولات الاجتماعية والاقتصادية والسياسية والثقافية في المجتمع الجزائري، وهذا عن طريق دراسة الفاعلين الاجتماعيين باعتبارهم حلقة أساسية في التغير. وعليه، اشتمل هذا المخبر على أربع فرق بحث تختص في دراسة هؤلاء الفاعلين الاجتماعيين، من شباب، وعمال، وفئات اجتماعية أخرى في الوسط الحضري والريفي، وكذا دراسة أهم القيم والممارسات الثقافية والدينية في هذا الوسط.
+                    </p>
+                    
+                    <div class="grid md:grid-cols-3 gap-6 mt-8">
+                        <div class="text-center">
+                            <i class="fas fa-microscope text-4xl text-purple-600 mb-3"></i>
+                            <h4 class="font-semibold text-gray-800 mb-2" data-ar="بحث علمي" data-fr="Recherche scientifique">بحث علمي</h4>
+                            <p class="text-sm text-gray-600" data-ar="منهجية علمية rigoristes" data-fr="Méthodologie scientifique rigoureuse">منهجية علمية rigoristes</p>
+                        </div>
+                        <div class="text-center">
+                            <i class="fas fa-users text-4xl text-blue-600 mb-3"></i>
+                            <h4 class="font-semibold text-gray-800 mb-2" data-ar="فاعلون اجتماعيون" data-fr="Acteurs sociaux">فاعلون اجتماعيون</h4>
+                            <p class="text-sm text-gray-600" data-ar="دراسة السلوكات والممارسات" data-fr="Étude des comportements et pratiques">دراسة السلوكات والممارسات</p>
+                        </div>
+                        <div class="text-center">
+                            <i class="fas fa-globe text-4xl text-green-600 mb-3"></i>
+                            <h4 class="font-semibold text-gray-800 mb-2" data-ar="تأثير مجتمعي" data-fr="Impact social">تأثير مجتمعي</h4>
+                            <p class="text-sm text-gray-600" data-ar="المساهمة في التطور الاجتماعي" data-fr="Contribution au développement social">المساهمة في التطور الاجتماعي</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Objectifs de recherche -->
+                <div class="bg-gradient-to-r from-blue-50 to-indigo-50 p-8 rounded-lg mb-8">
+                    <h3 class="text-xl font-semibold text-blue-800 mb-6" data-ar="أهداف البحث العلمي والتطوير التكنولوجي" data-fr="Objectifs de la recherche scientifique et du développement technologique">أهداف البحث العلمي والتطوير التكنولوجي</h3>
+                    <p class="text-gray-700 mb-4" data-ar="يهدف هذا البحث إلى:" data-fr="Cette recherche vise à:">يهدف هذا البحث إلى:</p>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-blue-500 ml-3 mt-1"></i>
+                            <span data-ar="إعطاء الاعتبار لدور وأهمية للمارسات الثقافية والدينية في ديناميكية المجتمع" data-fr="Donner de l'importance au rôle et à l'importance des pratiques culturelles et religieuses dans la dynamique sociale">
+                                إعطاء الاعتبار لدور وأهمية للمارسات الثقافية والدينية في ديناميكية المجتمع
+                            </span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-blue-500 ml-3 mt-1"></i>
+                            <span data-ar="انتاج معرفة سوسيولوجية حول التحولات الاجتماعية المعاصرة للمجتمع الجزائري" data-fr="Produire une connaissance sociologique sur les transformations sociales contemporaines de la société algérienne">
+                                انتاج معرفة سوسيولوجية حول التحولات الاجتماعية المعاصرة للمجتمع الجزائري
+                            </span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-blue-500 ml-3 mt-1"></i>
+                            <span data-ar="خلق فرص لتدريب الباحثين في طور اعداد رسائل أطروحاتهم الجامعية على الأعمال الميدانية ذات الصلة بموضوعات دراستهم" data-fr="Créer des opportunités pour former les chercheurs en préparation de leurs thèses universitaires aux travaux de terrain liés à leurs sujets d'étude">
+                                خلق فرص لتدريب الباحثين في طور اعداد رسائل أطروحاتهم الجامعية على الأعمال الميدانية ذات الصلة بموضوعات دراستهم
+                            </span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-blue-500 ml-3 mt-1"></i>
+                            <span data-ar="العمل على نشر نتائج البحوث والاعمال النظرية والميدانية المحصل عليها" data-fr="Travailler à la diffusion des résultats de recherche et des travaux théoriques et de terrain obtenus">
+                                العمل على نشر نتائج البحوث والاعمال النظرية والميدانية المحصل عليها
+                            </span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-blue-500 ml-3 mt-1"></i>
+                            <span data-ar="المساهمة في تفعيل النشاط بكليتنا" data-fr="Contribuer à l'activation des activités de notre faculté">
+                                المساهمة في تفعيل النشاط بكليتنا
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Sujets d'étude -->
+                <div class="bg-gradient-to-r from-green-50 to-emerald-50 p-8 rounded-lg mb-8">
+                    <h3 class="text-xl font-semibold text-green-800 mb-6" data-ar="المواضيع المراد دراستها في المخبر" data-fr="Sujets à étudier dans le laboratoire">المواضيع المراد دراستها في المخبر</h3>
+                    <p class="text-gray-700 mb-4" data-ar="يصبو هذا المخبر إلى دراسة الموضوعات التالية:" data-fr="Ce laboratoire vise à étudier les sujets suivants:">يصبو هذا المخبر إلى دراسة الموضوعات التالية:</p>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-arrow-right text-green-500 ml-3 mt-1"></i>
+                            <span data-ar="الشباب والقيم: العمل والسياسة والممارسات الثقافية" data-fr="Jeunesse et valeurs: Travail, politique et pratiques culturelles">
+                                الشباب والقيم: العمل والسياسة والممارسات الثقافية
+                            </span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-arrow-right text-green-500 ml-3 mt-1"></i>
+                            <span data-ar="الرابطة الاجتماعية والاسرة وإشكالية التماسك الاجتماعي" data-fr="Lien social et famille et problématique de la cohésion sociale">
+                                الرابطة الاجتماعية والاسرة وإشكالية التماسك الاجتماعي
+                            </span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-arrow-right text-green-500 ml-3 mt-1"></i>
+                            <span data-ar="الفاعلون الاجتماعيون في الوسط الحضري: واقع وممارسات" data-fr="Acteurs sociaux en milieu urbain: réalités et pratiques">
+                                الفاعلون الاجتماعيون في الوسط الحضري: واقع وممارسات
+                            </span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-arrow-right text-green-500 ml-3 mt-1"></i>
+                            <span data-ar="القيم والممارسات الدينية في المجتمع الجزائري" data-fr="Valeurs et pratiques religieuses dans la société algérienne">
+                                القيم والممارسات الدينية في المجتمع الجزائري
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Mots-clés -->
+                <div class="bg-gradient-to-r from-orange-50 to-red-50 p-8 rounded-lg">
+                    <h3 class="text-xl font-semibold text-orange-800 mb-6" data-ar="الكلمات المفتاحية" data-fr="Mots-clés">الكلمات المفتاحية</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-orange-100 text-orange-800 px-4 py-2 rounded-full text-sm font-medium">القيم</span>
+                        <span class="bg-orange-100 text-orange-800 px-4 py-2 rounded-full text-sm font-medium">الشباب</span>
+                        <span class="bg-orange-100 text-orange-800 px-4 py-2 rounded-full text-sm font-medium">الثقافة</span>
+                        <span class="bg-orange-100 text-orange-800 px-4 py-2 rounded-full text-sm font-medium">السياسة</span>
+                        <span class="bg-orange-100 text-orange-800 px-4 py-2 rounded-full text-sm font-medium">العمل</span>
+                        <span class="bg-orange-100 text-orange-800 px-4 py-2 rounded-full text-sm font-medium">البطالة</span>
+                        <span class="bg-orange-100 text-orange-800 px-4 py-2 rounded-full text-sm font-medium">الرابطة الاجتماعية</span>
+                        <span class="bg-orange-100 text-orange-800 px-4 py-2 rounded-full text-sm font-medium">الأسرة</span>
+                        <span class="bg-orange-100 text-orange-800 px-4 py-2 rounded-full text-sm font-medium">التغير الاجتماعي</span>
+                        <span class="bg-orange-100 text-orange-800 px-4 py-2 rounded-full text-sm font-medium">الوسط الحضري</span>
+                        <span class="bg-orange-100 text-orange-800 px-4 py-2 rounded-full text-sm font-medium">المرأة</span>
+                        <span class="bg-orange-100 text-orange-800 px-4 py-2 rounded-full text-sm font-medium">الدين</span>
+                        <span class="bg-orange-100 text-orange-800 px-4 py-2 rounded-full text-sm font-medium">الفاعل الاجتماعي</span>
+                        <span class="bg-orange-100 text-orange-800 px-4 py-2 rounded-full text-sm font-medium">الوسط الريفي</span>
+                        <span class="bg-orange-100 text-orange-800 px-4 py-2 rounded-full text-sm font-medium">المجتمع الجزائري</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Équipes de recherche -->
+        
+
+        <!-- Research Areas -->
+        <section id="recherche" class="mb-12">
+            <div class="bg-white rounded-xl shadow-lg p-8">
+                <h2 class="text-3xl font-bold text-blue-800 mb-6 text-center" data-ar="محاور البحث" data-fr="Axes de recherche">محاور البحث</h2>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition">
+                        <i class="fas fa-users text-3xl text-blue-600 mb-4"></i>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3" data-ar="سوسيولوجيا الفاعلين" data-fr="Sociologie des acteurs">سوسيولوجيا الفاعلين</h3>
+                        <p class="text-gray-600">دراسة السلوكات والممارسات الاجتماعية للأفراد والجماعات</p>
+                    </div>
+                    <div class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition">
+                        <i class="fas fa-city text-3xl text-green-600 mb-4"></i>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3" data-ar="سوسيولوجيا حضرية" data-fr="Sociologie urbaine">سوسيولوجيا حضرية</h3>
+                        <p class="text-gray-600">تحليل الظواهر الحضرية والتغيرات في الفضاءات الاجتماعية</p>
+                    </div>
+                    <div class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition">
+                        <i class="fas fa-globe text-3xl text-purple-600 mb-4"></i>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3" data-ar="سوسيولوجيا التنمية" data-fr="Sociologie du développement">سوسيولوجيا التنمية</h3>
+                        <p class="text-gray-600">فهم ديناميكيات التنمية الاجتماعية والاقتصادية</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Laboratory Activities Section -->
+        <section id="activites" class="mb-12">
+            <div class="bg-white rounded-xl shadow-lg p-8">
+                <h2 class="text-3xl font-bold text-blue-800 mb-6 text-center" data-ar="نشاطات المخبر" data-fr="Activités du laboratoire">نشاطات المخبر</h2>
+
+                <!-- Activity 1: Study Day Program -->
+                <div class="bg-gradient-to-r from-indigo-50 to-purple-50 rounded-lg p-8 border border-indigo-200">
+                    <div class="text-center mb-8">
+                        <h3 class="text-2xl font-bold text-indigo-800 mb-4" data-ar="برنامج يوم دراسي" data-fr="Programme de journée d'étude">برنامج يوم دراسي</h3>
+                        <div class="bg-indigo-600 text-white px-6 py-3 rounded-lg inline-block">
+                            <i class="fas fa-calendar-alt ml-2"></i>
+                            <span data-ar="LESAS - 2025" data-fr="LESAS - 2025">LESAS - 2025</span>
+                        </div>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-8 mb-8">
+                        <div class="bg-white rounded-lg p-6 shadow-md">
+                            <h4 class="text-lg font-semibold text-indigo-800 mb-4" data-ar="معلومات الحدث" data-fr="Informations sur l'événement">معلومات الحدث</h4>
+                            <div class="space-y-3 text-gray-700">
+                                <div class="flex items-center">
+                                    <i class="fas fa-university text-indigo-600 ml-3 w-5"></i>
+                                    <span data-ar="جامعة محمد بن أحمد، وهران 2" data-fr="Université Mohamed Ben Ahmed, Oran 2">جامعة محمد بن أحمد، وهران 2</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fas fa-building text-indigo-600 ml-3 w-5"></i>
+                                    <span data-ar="كلية العلوم الاجتماعية" data-fr="Faculté des Sciences Sociales">كلية العلوم الاجتماعية</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fas fa-map-marker-alt text-indigo-600 ml-3 w-5"></i>
+                                    <span data-ar="حي الباحث، السانيا وهران" data-fr="Cité du Chercheur, Es Senia Oran">حي الباحث، السانيا وهران</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fas fa-users text-indigo-600 ml-3 w-5"></i>
+                                    <span data-ar="مختبر LESAS" data-fr="Laboratoire LESAS">مختبر LESAS</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-lg p-6 shadow-md">
+                            <h4 class="text-lg font-semibold text-indigo-800 mb-4" data-ar="التنظيم" data-fr="Organisation">التنظيم</h4>
+                            <div class="space-y-3 text-gray-700">
+                                <div class="flex items-center">
+                                    <i class="fas fa-user-tie text-purple-600 ml-3 w-5"></i>
+                                    <span data-ar="منسق: مولاي الحاج مراد" data-fr="Coordinateur: Moulai Hadj Mourad">منسق: مولاي الحاج مراد</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fas fa-clock text-purple-600 ml-3 w-5"></i>
+                                    <span data-ar="يوم كامل" data-fr="Journée complète">يوم كامل</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fas fa-language text-purple-600 ml-3 w-5"></i>
+                                    <span data-ar="باللغة العربية والفرنسية" data-fr="En arabe et français">باللغة العربية والفرنسية</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Schedule -->
+                    
+                    <!-- Download Program -->
+                    <div class="text-center mt-8">
+                        <a href="activités labo/برنامج اليوم الدراسي.pdf" target="_blank" class="inline-flex items-center bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700 transition">
+                            <i class="fas fa-download ml-2"></i>
+                            <span data-ar="تحميل البرنامج الكامل" data-fr="Télécharger le programme complet">تحميل البرنامج الكامل</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications Section -->
+        <section id="publications" class="mb-12">
+            <div class="bg-white rounded-xl shadow-lg p-8">
+                <h2 class="text-3xl font-bold text-blue-800 mb-6 text-center" data-ar="منشوراتنا" data-fr="Nos publications">منشوراتنا</h2>
+                >
+                    <!-- Dynamic content will be loaded here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="mb-12">
+            <div class="bg-gradient-to-r from-blue-800 to-blue-600 text-white rounded-xl shadow-lg p-8">
+                <h2 class="text-3xl font-bold mb-6 text-center" data-ar="اتصل بنا" data-fr="Contactez-nous">اتصل بنا</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4" data-ar="معلومات الاتصال" data-fr="Informations de contact">معلومات الاتصال</h3>
+                        <div class="space-y-3">
+                            <p class="flex items-center">
+                                <i class="fas fa-envelope ml-3"></i>
+                                laboratoire-socio@university.edu
+                            </p>
+                            <p class="flex items-center">
+                                <i class="fas fa-phone ml-3"></i>
+                                +213 21 23 45 67
+                            </p>
+                            <p class="flex items-center">
+                                <i class="fas fa-map-marker-alt ml-3"></i>
+                                <span data-ar="جامعة، كلية العلوم الاجتماعية" data-fr="Université, Faculté des Sciences Sociales">جامعة، كلية العلوم الاجتماعية</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4" data-ar="أرسل لنا رسالة" data-fr="Envoyez-nous un message">أرسل لنا رسالة</h3>
+                        <form id="contactForm" class="space-y-4">
+                            <input type="text" placeholder="الاسم" class="w-full px-4 py-2 rounded-lg text-gray-800" required>
+                            <input type="email" placeholder="البريد الإلكتروني" class="w-full px-4 py-2 rounded-lg text-gray-800" required>
+                            <textarea placeholder="الرسالة" rows="4" class="w-full px-4 py-2 rounded-lg text-gray-800" required></textarea>
+                            <button type="submit" class="bg-white text-blue-800 px-6 py-2 rounded-lg hover:bg-blue-50 transition">
+                                <i class="fas fa-paper-plane ml-2"></i>
+                                إرسال
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <p>&copy; 2024 مخبر الدراسات السوسيولوجية للفاعلين الاجتماعيين</p>
+                <p class="text-sm opacity-75 mt-2">Laboratoire d'Études Sociologiques des Acteurs Sociaux</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Admin Login Modal -->
+    <div id="adminLoginModal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50">
+        <div class="flex items-center justify-center min-h-screen p-4">
+            <div class="bg-white rounded-xl shadow-2xl max-w-md w-full p-8">
+                <div class="text-center mb-8">
+                    <i class="fas fa-lock text-4xl text-blue-600 mb-4"></i>
+                    <h2 class="text-2xl font-bold text-gray-800" data-ar="دخول الإدارة" data-fr="Connexion Admin">دخول الإدارة</h2>
+                    <p class="text-gray-600 mt-2" data-ar="أدخل كلمة المرور للوصول إلى لوحة التحكم" data-fr="Entrez le mot de passe pour accéder au panneau de contrôle">أدخل كلمة المرور للوصول إلى لوحة التحكم</p>
+                </div>
+
+                <form id="adminLoginForm" class="space-y-6">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2" data-ar="كلمة المرور" data-fr="Mot de passe">كلمة المرور</label>
+                        <input type="password" id="adminPassword" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="••••••••" required>
+                    </div>
+
+                    <button type="submit" class="w-full bg-blue-600 text-white py-3 px-4 rounded-lg hover:bg-blue-700 transition font-medium">
+                        <i class="fas fa-sign-in-alt ml-2"></i>
+                        <span data-ar="دخول" data-fr="Connexion">دخول</span>
+                    </button>
+                </form>
+
+                <div class="mt-6 text-center">
+                    <button id="closeAdminLogin" class="text-gray-500 hover:text-gray-700 text-sm">
+                        <i class="fas fa-times ml-1"></i>
+                        <span data-ar="إلغاء" data-fr="Annuler">إلغاء</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Admin Dashboard Modal -->
+    <div id="adminDashboardModal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50 overflow-y-auto">
+        <div class="min-h-screen py-8 px-4">
+            <div class="max-w-7xl mx-auto">
+                <!-- Dashboard Header -->
+                <div class="bg-white rounded-xl shadow-2xl p-8 mb-8">
+                    <div class="flex justify-between items-center mb-6">
+                        <div>
+                            <h2 class="text-3xl font-bold text-gray-800" data-ar="لوحة تحكم الإدارة" data-fr="Panneau d'Administration">لوحة تحكم الإدارة</h2>
+                            <p class="text-gray-600 mt-2" data-ar="إدارة محتوى الموقع والأعضاء والأنشطة" data-fr="Gérer le contenu du site, les membres et les activités">إدارة محتوى الموقع والأعضاء والأنشطة</p>
+                        </div>
+                        <button id="closeAdminDashboard" class="bg-red-500 hover:bg-red-600 text-white px-6 py-3 rounded-lg transition">
+                            <i class="fas fa-times ml-2"></i>
+                            <span data-ar="إغلاق" data-fr="Fermer">إغلاق</span>
+                        </button>
+                    </div>
+
+                    <!-- Dashboard Stats -->
+                    <div class="grid md:grid-cols-4 gap-6 mb-8">
+                        <div class="bg-gradient-to-r from-blue-500 to-blue-600 text-white p-6 rounded-lg">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <p class="text-blue-100 text-sm" data-ar="إجمالي الأعضاء" data-fr="Total Membres">إجمالي الأعضاء</p>
+                                    <p class="text-2xl font-bold" id="adminTotalMembers">25</p>
+                                </div>
+                                <i class="fas fa-users text-4xl text-blue-200"></i>
+                            </div>
+                        </div>
+
+                        <div class="bg-gradient-to-r from-green-500 to-green-600 text-white p-6 rounded-lg">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <p class="text-green-100 text-sm" data-ar="المنشورات" data-fr="Publications">المنشورات</p>
+                                    <p class="text-2xl font-bold" id="adminTotalPublications">42</p>
+                                </div>
+                                <i class="fas fa-book text-4xl text-green-200"></i>
+                            </div>
+                        </div>
+
+                        <div class="bg-gradient-to-r from-purple-500 to-purple-600 text-white p-6 rounded-lg">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <p class="text-purple-100 text-sm" data-ar="الأنشطة" data-fr="Activités">الأنشطة</p>
+                                    <p class="text-2xl font-bold" id="adminTotalActivities">3</p>
+                                </div>
+                                <i class="fas fa-calendar-alt text-4xl text-purple-200"></i>
+                            </div>
+                        </div>
+
+                        <div class="bg-gradient-to-r from-orange-500 to-orange-600 text-white p-6 rounded-lg">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <p class="text-orange-100 text-sm" data-ar="الزيارات" data-fr="Visites">الزيارات</p>
+                                    <p class="text-2xl font-bold" id="adminTotalVisits">1,234</p>
+                                </div>
+                                <i class="fas fa-eye text-4xl text-orange-200"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Actions -->
+                    <div class="grid md:grid-cols-3 gap-4">
+                        <button id="addMemberBtn" class="bg-blue-600 hover:bg-blue-700 text-white p-4 rounded-lg transition flex items-center justify-center">
+                            <i class="fas fa-user-plus ml-3 text-xl"></i>
+                            <span data-ar="إضافة عضو" data-fr="Ajouter Membre">إضافة عضو</span>
+                        </button>
+
+                        <button id="addPublicationBtn" class="bg-green-600 hover:bg-green-700 text-white p-4 rounded-lg transition flex items-center justify-center">
+                            <i class="fas fa-plus ml-3 text-xl"></i>
+                            <span data-ar="إضافة منشور" data-fr="Ajouter Publication">إضافة منشور</span>
+                        </button>
+
+                        <button id="addActivityBtn" class="bg-purple-600 hover:bg-purple-700 text-white p-4 rounded-lg transition flex items-center justify-center">
+                            <i class="fas fa-calendar-plus ml-3 text-xl"></i>
+                            <span data-ar="إضافة نشاط" data-fr="Ajouter Activité">إضافة نشاط</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Management Sections -->
+                <div class="grid lg:grid-cols-3 gap-8">
+                    <!-- Members Management -->
+                    <div class="bg-white rounded-xl shadow-2xl p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-6 flex items-center">
+                            <i class="fas fa-users text-blue-600 ml-3"></i>
+                            <span data-ar="إدارة الأعضاء" data-fr="Gestion des Membres">إدارة الأعضاء</span>
+                        </h3>
+
+                        <div class="space-y-4" id="membersList">
+                            <!-- Members will be loaded here -->
+                        </div>
+
+                        <div class="mt-6">
+                            <button class="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 px-4 rounded-lg transition">
+                                <i class="fas fa-list ml-2"></i>
+                                <span data-ar="عرض جميع الأعضاء" data-fr="Voir tous les membres">عرض جميع الأعضاء</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Publications Management -->
+                    <div class="bg-white rounded-xl shadow-2xl p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-6 flex items-center">
+                            <i class="fas fa-book text-green-600 ml-3"></i>
+                            <span data-ar="إدارة المنشورات" data-fr="Gestion des Publications">إدارة المنشورات</span>
+                        </h3>
+
+                        <div class="space-y-4" id="publicationsAdminList">
+                            <!-- Publications will be loaded here -->
+                        </div>
+
+                        <div class="mt-6">
+                            <button class="w-full bg-green-600 hover:bg-green-700 text-white py-3 px-4 rounded-lg transition">
+                                <i class="fas fa-list ml-2"></i>
+                                <span data-ar="عرض جميع المنشورات" data-fr="Voir toutes les publications">عرض جميع المنشورات</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Activities Management -->
+                    <div class="bg-white rounded-xl shadow-2xl p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-6 flex items-center">
+                            <i class="fas fa-calendar-alt text-purple-600 ml-3"></i>
+                            <span data-ar="إدارة الأنشطة" data-fr="Gestion des Activités">إدارة الأنشطة</span>
+                        </h3>
+
+                        <div class="space-y-4" id="activitiesList">
+                            <!-- Activities will be loaded here -->
+                        </div>
+
+                        <div class="mt-6">
+                            <button class="w-full bg-purple-600 hover:bg-purple-700 text-white py-3 px-4 rounded-lg transition">
+                                <i class="fas fa-list ml-2"></i>
+                                <span data-ar="عرض جميع الأنشطة" data-fr="Voir toutes les activités">عرض جميع الأنشطة</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Member Modal -->
+    <div id="addMemberModal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50 overflow-y-auto">
+        <div class="flex items-center justify-center min-h-screen p-4">
+            <div class="bg-white rounded-xl shadow-2xl max-w-2xl w-full p-8">
+                <div class="flex justify-between items-center mb-8">
+                    <h2 class="text-2xl font-bold text-gray-800" data-ar="إضافة عضو جديد" data-fr="Ajouter un Nouveau Membre">إضافة عضو جديد</h2>
+                    <button id="closeAddMemberModal" class="text-gray-500 hover:text-gray-700">
+                        <i class="fas fa-times text-xl"></i>
+                    </button>
+                </div>
+
+                <form id="addMemberForm" class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2" data-ar="الاسم (عربي)" data-fr="Nom (Arabe)">الاسم (عربي)</label>
+                            <input type="text" name="nameAr" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2" data-ar="الاسم (فرنسي)" data-fr="Nom (Français)">الاسم (فرنسي)</label>
+                            <input type="text" name="nameFr" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
+                        </div>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2" data-ar="المنصب (عربي)" data-fr="Poste (Arabe)">المنصب (عربي)</label>
+                            <input type="text" name="roleAr" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2" data-ar="المنصب (فرنسي)" data-fr="Poste (Français)">المنصب (فرنسي)</label>
+                            <input type="text" name="roleFr" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2" data-ar="الفئة" data-fr="Catégorie">الفئة</label>
+                        <select name="category" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
+                            <option value="professeurs" data-ar="أساتذة" data-fr="Professeurs">أساتذة</option>
+                            <option value="chercheurs" data-ar="باحثون" data-fr="Chercheurs">باحثون</option>
+                            <option value="doctorants" data-ar="طلاب دكتوراه" data-fr="Doctorants">طلاب دكتوراه</option>
+                        </select>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2" data-ar="مجال البحث (عربي)" data-fr="Domaine de recherche (Arabe)">مجال البحث (عربي)</label>
+                            <input type="text" name="researchAr" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2" data-ar="مجال البحث (فرنسي)" data-fr="Domaine de recherche (Français)">مجال البحث (فرنسي)</label>
+                            <input type="text" name="researchFr" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2" data-ar="البريد الإلكتروني" data-fr="Email">البريد الإلكتروني</label>
+                        <input type="email" name="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
+                    </div>
+
+                    <div class="flex justify-end space-x-reverse space-x-4 pt-6">
+                        <button type="button" id="cancelAddMember" class="px-6 py-3 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition">
+                            <span data-ar="إلغاء" data-fr="Annuler">إلغاء</span>
+                        </button>
+                        <button type="submit" class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">
+                            <i class="fas fa-save ml-2"></i>
+                            <span data-ar="حفظ" data-fr="Sauvegarder">حفظ</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Publication Modal -->
+    <div id="addPublicationModal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50 overflow-y-auto">
+        <div class="flex items-center justify-center min-h-screen p-4">
+            <div class="bg-white rounded-xl shadow-2xl max-w-2xl w-full p-8">
+                <div class="flex justify-between items-center mb-8">
+                    <h2 class="text-2xl font-bold text-gray-800" data-ar="إضافة منشور جديد" data-fr="Ajouter une Nouvelle Publication">إضافة منشور جديد</h2>
+                    <button id="closeAddPublicationModal" class="text-gray-500 hover:text-gray-700">
+                        <i class="fas fa-times text-xl"></i>
+                    </button>
+                </div>
+
+                <form id="addPublicationForm" class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2" data-ar="عنوان المنشور (عربي)" data-fr="Titre de la publication (Arabe)">عنوان المنشور (عربي)</label>
+                            <input type="text" name="titleAr" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent" required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2" data-ar="عنوان المنشور (فرنسي)" data-fr="Titre de la publication (Français)">عنوان المنشور (فرنسي)</label>
+                            <input type="text" name="titleFr" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent" required>
+                        </div>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2" data-ar="المؤلفون (عربي)" data-fr="Auteurs (Arabe)">المؤلفون (عربي)</label>
+                            <input type="text" name="authorsAr" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent" required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2" data-ar="المؤلفون (فرنسي)" data-fr="Auteurs (Français)">المؤلفون (فرنسي)</label>
+                            <input type="text" name="authorsFr" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent" required>
+                        </div>
+                    </div>
+
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2" data-ar="السنة" data-fr="Année">السنة</label>
+                            <input type="number" name="year" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent" required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2" data-ar="المجلة (عربي)" data-fr="Journal (Arabe)">المجلة (عربي)</label>
+                            <input type="text" name="journalAr" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent" required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2" data-ar="المجلة (فرنسي)" data-fr="Journal (Français)">المجلة (فرنسي)</label>
+                            <input type="text" name="journalFr" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent" required>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2" data-ar="نوع المنشور" data-fr="Type de publication">نوع المنشور</label>
+                        <select name="type" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent" required>
+                            <option value="article" data-ar="مقالة" data-fr="Article">مقالة</option>
+                            <option value="book" data-ar="كتاب" data-fr="Livre">كتاب</option>
+                            <option value="conference" data-ar="مؤتمر" data-fr="Conférence">مؤتمر</option>
+                        </select>
+                    </div>
+
+                    <div class="flex justify-end space-x-reverse space-x-4 pt-6">
+                        <button type="button" id="cancelAddPublication" class="px-6 py-3 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition">
+                            <span data-ar="إلغاء" data-fr="Annuler">إلغاء</span>
+                        </button>
+                        <button type="submit" class="px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition">
+                            <i class="fas fa-save ml-2"></i>
+                            <span data-ar="حفظ" data-fr="Sauvegarder">حفظ</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Activity Modal -->
+    <div id="addActivityModal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50 overflow-y-auto">
+        <div class="flex items-center justify-center min-h-screen p-4">
+            <div class="bg-white rounded-xl shadow-2xl max-w-2xl w-full p-8">
+                <div class="flex justify-between items-center mb-8">
+                    <h2 class="text-2xl font-bold text-gray-800" data-ar="إضافة نشاط جديد" data-fr="Ajouter une Nouvelle Activité">إضافة نشاط جديد</h2>
+                    <button id="closeAddActivityModal" class="text-gray-500 hover:text-gray-700">
+                        <i class="fas fa-times text-xl"></i>
+                    </button>
+                </div>
+
+                <form id="addActivityForm" class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2" data-ar="عنوان النشاط (عربي)" data-fr="Titre de l'activité (Arabe)">عنوان النشاط (عربي)</label>
+                            <input type="text" name="titleAr" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent" required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2" data-ar="عنوان النشاط (فرنسي)" data-fr="Titre de l'activité (Français)">عنوان النشاط (فرنسي)</label>
+                            <input type="text" name="titleFr" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent" required>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2" data-ar="وصف النشاط (عربي)" data-fr="Description de l'activité (Arabe)">وصف النشاط (عربي)</label>
+                        <textarea name="descriptionAr" rows="3" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent" required></textarea>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2" data-ar="وصف النشاط (فرنسي)" data-fr="Description de l'activité (Français)">وصف النشاط (فرنسي)</label>
+                        <textarea name="descriptionFr" rows="3" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent" required></textarea>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2" data-ar="تاريخ النشاط" data-fr="Date de l'activité">تاريخ النشاط</label>
+                            <input type="date" name="date" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent" required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2" data-ar="المكان" data-fr="Lieu">المكان</label>
+                            <input type="text" name="location" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent" required>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2" data-ar="نوع النشاط" data-fr="Type d'activité">نوع النشاط</label>
+                        <select name="type" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent" required>
+                            <option value="conference" data-ar="مؤتمر" data-fr="Conférence">مؤتمر</option>
+                            <option value="workshop" data-ar="ورشة عمل" data-fr="Atelier">ورشة عمل</option>
+                            <option value="seminar" data-ar="ندوة" data-fr="Séminaire">ندوة</option>
+                            <option value="study_day" data-ar="يوم دراسي" data-fr="Journée d'étude">يوم دراسي</option>
+                        </select>
+                    </div>
+
+                    <div class="flex justify-end space-x-reverse space-x-4 pt-6">
+                        <button type="button" id="cancelAddActivity" class="px-6 py-3 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition">
+                            <span data-ar="إلغاء" data-fr="Annuler">إلغاء</span>
+                        </button>
+                        <button type="submit" class="px-6 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition">
+                            <i class="fas fa-save ml-2"></i>
+                            <span data-ar="حفظ" data-fr="Sauvegarder">حفظ</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
